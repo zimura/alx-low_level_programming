@@ -3,13 +3,13 @@
 /**
 * main - print the string in the put function
 * 
-* Decription: using the priString function
-* this program prints "Programming is like building a multilingual puzzle"
+* Decription: using the main function
+* this program prints "Programming is like building a multilingual puzzle
 * Return: 0
 */
 
 int main(void)
 {
-	puts("Programming is like building a multilingual puzzle");
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
