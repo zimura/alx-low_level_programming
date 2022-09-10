@@ -5,12 +5,12 @@
 #include <stdio.h>
 
 
-/**
-* main - print greater than zero, zero, or not greater than zero
-* Description: using the main function
-* this program should print "greater than zero, zero, or not greater than zero
-* Return: 0
-*/
+/**                                                                                                                             
+* main - print greater than zero, zero, or not greater than zero                                                                
+* Description: using the main function                                                                                          
+* this program should print "greater than zero, zero, or not greater than zero                                                  
+* Return: 0                                                                                                                 
+*/ 
 
 int main(void)
 
@@ -35,9 +35,10 @@ int main(void)
 					{
 						printf("Last digit of %d is %d and is 0\n", n, a);
 					}
-					else 
+					else
 					{
 						printf("Last digit of %d is %d and is less than 6 and not 0\n", n, a);
+					}
 					return (0);
 
 }
