@@ -5,12 +5,12 @@
 #include <stdio.h>
 
 
-/**                                                                                                                             
-* main - print greater than zero, zero, or not greater than zero                                                                
-* Description: using the main function                                                                                          
-* this program should print "greater than zero, zero, or not greater than zero                                                  
-* Return: 0                                                                                                                 
-*/ 
+/**
+* main - print greater than, zero, or less than six and not equal to zero
+* Description: using the main function
+* this program should print "greater than, is zero, or less than six"
+* Return: 0
+*/
 
 int main(void)
 
