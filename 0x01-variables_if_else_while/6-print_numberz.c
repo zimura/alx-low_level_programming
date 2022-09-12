@@ -10,12 +10,12 @@
 
 int main(void)
 {
-	int __c;
+	int '__c';
 
 	for (__c = 0; __c <10; __C++)
 	{
 		putchar(int __c );
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
