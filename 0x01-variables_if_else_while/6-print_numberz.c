@@ -10,11 +10,11 @@
 
 int main(void)
 {
-	int '__c';
+	int c;
 
-	for (__c = 0; __c <10; __C++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		putchar(int __c );
+		putchar(c);
 	}
 	putchar('\n');
 	return (0);
