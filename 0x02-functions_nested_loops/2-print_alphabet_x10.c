@@ -5,7 +5,7 @@
 */
 void print_alphabet_x10(void)
 {
-	int k = "abcdefghijklmnopqrstuvwxyz";
+	char k = "abcdefghijklmnopqrstuvwxyz";
 	int j;
 
 	for (j = 1;  j <= 10; j++)
