@@ -19,7 +19,7 @@ int main(void)
 
 	for (i = 1; i < 91; i++)
 	{
-		prinf(", %lu", k);
+		printf(", %lu", k);
 		k = k + j;
 		j = k - j;
 	}
@@ -38,6 +38,6 @@ int main(void)
 		k2 = k2 + j2;
 		j2 = k2 - j2;
 	}
-	printf('\n');
+	printf("\n");
 	return (0);
 }
