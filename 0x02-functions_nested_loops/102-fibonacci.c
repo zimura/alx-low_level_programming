@@ -19,11 +19,11 @@ int main(void)
 	{
 	if (j != 203650111074)
 	{
-		printf("%|d, ", j);
+		printf("%ld, ", j);
 	}
 	else
 	{
-		printf("%|d\n", j);
+		printf("%ld\n", j);
 	}
 	next = j + k;
 	j = k;
