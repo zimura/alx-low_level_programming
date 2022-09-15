@@ -15,9 +15,9 @@ int main(void)
 	e = 0;
 	b = 0;
 
-	for (i = 0; i < 1024; ++i)
+	for (a = 0; a < 1024; ++a)
 	{
-	if ((i % 3) == 0)
+	if ((a % 3) == 0)
 	{
 		c = c + a;
 	} else if ((a % 5) == 0)
