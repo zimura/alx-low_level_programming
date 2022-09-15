@@ -10,10 +10,6 @@ void print_times_table(int n)
 	for (n = 0; n <= 15; n++)
 	{
 	if (n < 0 ||  n > 15)
-	{
-		printf("%d, ", n++);
-		printf("%d\n", n);
-	}
-	}
-	return (0);
+	printf("%d, ", n++);
+	printf("%d\n", n);
 }
