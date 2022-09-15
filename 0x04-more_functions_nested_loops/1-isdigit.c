@@ -3,6 +3,8 @@
 /**
 * _isdigit - checks for a digit (0 through 9)
 * @c: that prints the charcter
+* Description: using the _isdigit function
+* the program should check for digits
 * Return: Success
 */
 
