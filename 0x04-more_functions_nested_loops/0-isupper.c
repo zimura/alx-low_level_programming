@@ -2,11 +2,11 @@
 
 /**
 * _isupper - checks for uppercase character
-* Desciption: Using the isupper function
-* this program should check for upper case
-* Return: 0
+* @c: the character that it checks
+* Description: using the _isupper function
+* this program should upper case
+* Return: always success
 */
-
 int _isupper(int c)
 {
 	return (c >= 'A' && c <= 'Z');
