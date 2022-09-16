@@ -1,0 +1,11 @@
+#include "main.h"
+
+/**
+* print_square - prints a square
+* @size: takes parameter
+* Description: using the print_square function
+* this program should print a square
+* Return: success
+*/
+void print_square(int size)
+{
