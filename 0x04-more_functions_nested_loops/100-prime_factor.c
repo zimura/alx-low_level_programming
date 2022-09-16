@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
-* prime_factor - print the largest factor of a given number
-* Description: using the prime_factor function
+* main - print the largest factor of a given number
+* Description: using the main function
 * this program should print some factor
 * Return: success
 */
