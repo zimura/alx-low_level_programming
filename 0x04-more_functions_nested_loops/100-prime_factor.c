@@ -7,7 +7,7 @@
 * Return: success
 */
 
-in main(void)
+int main(void)
 {
 	long num = 612852475143;
 	int x;
@@ -25,4 +25,6 @@ in main(void)
 		num /= x;
 	}
 	}
+	printf("%ld\n", num);
+	return (0);
 }
