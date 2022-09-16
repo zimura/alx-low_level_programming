@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -17,10 +18,10 @@ void more_numbers(void)
 	{
 	if (y > 9)
 	{
-	_putchar((y / 10) + '0');
+		_putchar((y / 10) + '0');
 	}
-	_putchar((y % 10) + '0');
+		_putchar((y % 10) + '0');
 	}
-	_putchar(10);
+		_putchar(10);
 	}
 }
