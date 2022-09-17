@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -21,13 +22,13 @@ void print_triangle(int size)
 	}
 	for (y = 0; y < x; y++)
 	{
-		_putchar("#");
+		_putchar('#');
 	}
 	if (x == size)
 	{
 		continue;
 	}
-	}
-	}
 	_putchar('\n');
+	}
+	}
 }
