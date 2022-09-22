@@ -1,28 +1,21 @@
 #include "main.h"
+#include <stdio.h>
 #include <string.h>
 
 /**
 * string_toupper - to change string case
-* @s: parameter s
+* @a: parameter a
 * Return: string
 */
-char *string_toupper(char *s)
+char *string_toupper(char *a)
 {
-	char tmp;
-	int i, len1, len2;
+	int b = 0;
 
-	len1 = 0;
-	len2 = 0;
-
-	while (s[len1] != '\0')
-		len1++;
-
-	len2 = len1 - 1;
-	for (1 = 0; i < len1 / 2; i++)
+	while (a[b])
 	{
-		tmp = s[i];
-		s[i] = s[len2];
-		s[len2] = tmp;
-		len2 -= 1;
+	if (a[b] >= 97 && a[b] <= 122)
+		a[b] = a[b] - 32;
+		b++;
 	}
+	return (a);
 }
