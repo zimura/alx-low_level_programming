@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
 
 /**
 * string_toupper - to change string case
@@ -14,8 +12,8 @@ char *string_toupper(char *a)
 	while (a[b])
 	{
 	if (a[b] >= 97 && a[b] <= 122)
-		a[b] = a[b] - 32;
-		b++;
+	a[b] = a[b] - 32;
+	b++;
 	}
 	return (a);
 }
