@@ -7,17 +7,22 @@
 */
 void reverse_array(int *a, int n)
 {
-	int c, aux, d;
+	int temp, s, e;
 
-	c = 0;
-
-	for (c = 0; c < n; c++)
-		b++;
-	for (d = 0; d < c / 2; d++)
+	s = 0;
+	e = n - 1;
+	/**
+	 * set value in array in a temp
+	 * then place the last array in
+	 * the first array then place
+	 * value in temp to last array
+	 */
+	while (s < e)
 	{
-		aux = a[d];
-		a[d] = *b;
-		*b = aux;
-		b--;
+		temp = a[s];
+		a[s] = a[e];
+		a[e] = temp;
+		s++;
+		e--;
 	}
 }
