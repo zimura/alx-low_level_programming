@@ -1,71 +1,47 @@
 #include "main.h"
 
-char *add_strings(char *n1, char *n2, char *r, int r_index);
-char *infinite_add(char *n1, char *n2, char *r, int size_r);
-
-/**
-* add_strings - add two numbers
-* @n1: the string containing the first number to be added
-* @n2: the string containing the second number to be added
-* @r: the buffer to store the result
-* Return: An integer
-*/
-char *add_strings(char *n1, char *n2, char *r, int r_index)
-{
-	int n, t = 0;
-
-	for (; *n1 && *n2; n1--, n2--, r_index--)
-	{
-		n = (*n1 - '0') + (*n2 - '0');
-		n += t;
-		*(r + r_index) = (n % 10) + '0';
-		t = n / 10;
-	}
-	for (; *n1; n1--, r_index--)
-	{
-		n = (*n1 - '0') + t;
-		*(r + r_index) = (n % 10) + '0';
-		t = n / 10;
-	}
-	for (; *n2; n2--, r_index)
-	{
-		n = (*n2 - '0') + t;
-		*(r + r_index) = (n % 10) + '0';
-		t = n / 10;
-	}
-	if (t && r_index >= 0)
-	{
-		*(r + r_index) = (t % 10) + '0';
-		return (r + r_index);
-	}
-	else if (t && r_index < 0)
-	return (0);
-
-	return (r + r_index + 1);
-}
 /**
 * infinite_add - add two numbers
 * @n1: the string containing the first number to be added
 * @n2: the string containing the second number to be added
 * @r: the buffer to store the result
+* @size_r: the current index of the buffer
 * Return: An integer
 */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int inx, n1_len = 0, n2_len = 0;
+	int i, j, k, l, m, n;
 
-	for (inx = 0; *(n1 + inx); inx++)
-	n1_len++;
+	for (i = 0; n1[i]; i++)
+		;
+	for (j = 0; n2[j]; j++)
+		;
+	if (i > size_r || j > size_r)
+		return (0);
+	m = 0;
 
-	for (inx = 0; *(n2 + inx); inx++)
-	n2_len++;
-
-	if (size_r <= n1_len + 1 || size_r <= n2_len + 1)
-	return (0);
-
-	n1 += n1_len - 1;
-	n2 += n2_len - 1;
-	*(r + size_r) = '\0';
-
-	return (add_strings(n1, n2, r, --size_r));
+	for (i -= 1, j -= 1, k = 0; k < size_r - 1; i--, j--, k++)
+	{
+		n = m;
+	if (i >= 0)
+	n += n1[i] - '0';
+	if (j >= 0)
+	n += n2[j] - '0';
+	if (i < 0 && j < 0 && n == 0)
+	{
+		break;
+	}
+	m = n / 10;
+	r[k] = n % 10 + '0';
+	}
+	r[k] = '\0';
+	if (i >= 0 || j >= 0 || m)
+		return (0);
+	for (k -= 1, l = 0; l < k; k--, l++)
+	{
+		m = r[k];
+		r[k] = r[l];
+		r[l] = m;
+	}
+	return (r);
 }
