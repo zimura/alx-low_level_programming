@@ -13,7 +13,7 @@ char *_strpbrk(char *s, char *accept)
 	while (s[a])
 	{
 		b = 0;
-	while (accepted[b])
+	while (accept[b])
 	{
 	if (s[a] == accept[b])
 	{
