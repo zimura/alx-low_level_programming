@@ -12,9 +12,9 @@
 char *create_array(unsigned int size, char c)
 {
 	char *buffer;
-	unsigned int post;
+	unsigned int position;
 
-	if (buffer == 0)
+	if (size == 0)
 	{
 		return (NULL);
 	}
@@ -27,11 +27,11 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		post = 0;
-	while (post < size)
+		position = 0;
+	while (position < size)
 	{
-		*(buffer + post) = c;
-		post;
+		*(buffer + position) = c;
+		position++;
 	}
 	return (buffer);
 	}
